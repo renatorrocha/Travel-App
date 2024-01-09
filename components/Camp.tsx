@@ -1,7 +1,7 @@
 import { PEOPLE_URL } from '@/constants'
 import Image from 'next/image'
 
-interface CampProps {
+interface ICampSiteProps {
   backgroundImage: string
   title: string
   subtitle: string
@@ -13,7 +13,7 @@ function CampSite({
   title,
   subtitle,
   peopleJoined
-}: CampProps) {
+}: ICampSiteProps) {
   return (
     <div
       className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
